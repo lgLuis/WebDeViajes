@@ -8,3 +8,81 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+:root{
+    --fuentePpal: 'Baloo Tammudu 2', cursive;
+    --fuenteTexto: 'Nanum Gothic', sans-serif;;
+    --azulMorado:#7400b8;
+    --azul:#5e60ce;
+    --turquesa:#48bfe3;
+    --claro:#f4f1de;
+    --negro:#000000;
+    --blanco:#ffffff;
+}
+
+body{
+    background-color: var(--claro);
+    font-family: var(--fuentePpal);
+}
+h2{
+    flex: 0 1 100%;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+h3{
+    font-family: var(--fuentePpal);
+    margin: 0;
+    font-weight: 700;
+}
+
+img{ max-width: 100%;}
+
+.contenedor{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+@media (min-width:480px){
+    .contenido-ppal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .entrada{
+        flex: 0 1 calc(50% - 1rem);
+        border: 1px solid var(--azul);
+        margin: 0.5rem;
+    }
+}
+
+@media(min-width:768px){
+    .entrada{
+        flex: 0 1 calc(33% - 1rem);
+    }
+}
+
+.contenido{
+    background-color: var(--blanco);
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.contenido span{
+    color: var(--azulMorado);
+    font-weight: bold;
+}
+
+.contenido h3{
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.boton{
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding:  1rem 3rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+}
